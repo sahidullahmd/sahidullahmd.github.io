@@ -1,2 +1,4 @@
+theme: jekyll-theme-minimal
+title: Sahid's homepage
 auto: true
 include: [".well-known"]

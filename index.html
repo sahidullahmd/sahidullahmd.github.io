@@ -14,6 +14,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    /* Compact layout overrides; page content remains unchanged. */
+    :root { --compact-space: 1rem; }
+    html { scroll-behavior: smooth; }
+    body { line-height: 1.55; }
+    .container { width: min(100% - 2.5rem, 1080px); }
+    .site-header { padding-block: .45rem; }
+    .nav-wrap { min-height: 3.1rem; gap: 1rem; }
+    .site-nav { gap: 1.05rem; }
+    .section { padding-block: clamp(2rem, 4vw, 3.1rem); }
+    .hero.section { padding-block: clamp(2.4rem, 5vw, 4rem); }
+    .hero-grid { gap: clamp(1.5rem, 4vw, 3rem); }
+    .hero h1 { margin-block: .25rem .45rem; }
+    .hero .role, .hero .affiliation { margin-block: .2rem; }
+    .hero .intro { margin-top: .8rem; }
+    .hero-links { margin-top: 1rem; gap: .7rem 1rem; }
+    .portrait { max-height: 300px; width: auto; }
+    .eyebrow { margin-bottom: .35rem; letter-spacing: .08em; }
+    h2 { margin-block: .25rem 1rem; }
+    .prose { line-height: 1.5; }
+    .prose p { margin-block: .45rem; }
+    .prose ul, .prose ol { margin-block: .45rem; padding-left: 1.25rem; }
+    .prose li { margin-block: .22rem; padding-left: .08rem; }
+    .contact-line { margin-top: .8rem; gap: .5rem 1.25rem; }
+    .section-note { margin-block: .3rem .8rem; }
+    .publication-list { font-size: .91rem; line-height: 1.42; }
+    .publication-list > b { display: inline-block; margin-top: .7rem; }
+    .publication-list ol { margin-top: .3rem; margin-bottom: .75rem; }
+    .publication-list li { margin-block: .25rem; }
+    #service .prose ul { margin-bottom: .65rem; }
+    #interests .prose ul { margin-bottom: .7rem; }
+    #contact p { margin-block: .35rem; }
+    .site-footer { padding-block: .8rem; }
+    .footer-inner { gap: .5rem 1rem; }
+    @media (max-width: 700px) {
+      .container { width: min(100% - 1.5rem, 1080px); }
+      .section { padding-block: 1.8rem; }
+      .hero.section { padding-block: 2rem; }
+      .portrait { max-height: 220px; }
+      .publication-list { font-size: .88rem; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

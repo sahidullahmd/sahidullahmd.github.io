@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Books and learning resources currently being read by Md Sahidullah.">
+  <meta name="author" content="Md Sahidullah">
+  <title>Books I’m Reading | Md Sahidullah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body { line-height: 1.5; }
+    .container { width: min(100% - 2.5rem, 1080px); }
+    .site-header { padding-block: .45rem; }
+    .nav-wrap { min-height: 3.1rem; gap: 1rem; }
+    .site-nav { gap: 1.05rem; }
+    .section { padding-block: 1.6rem; }
+    h1 { margin: .25rem 0 .55rem; font-size: clamp(1.8rem, 4vw, 2.4rem); }
+    .eyebrow { margin: 0 0 .2rem; letter-spacing: .08em; }
+    .intro { margin: .3rem 0 1rem; }
+    .book-list { padding-left: 1.25rem; }
+    .book-list li { margin: .75rem 0; padding-left: .15rem; }
+    .book-title { font-weight: 600; }
+    .book-author { color: #687386; }
+    .back-link { display: inline-block; margin-top: 1rem; }
+    .site-footer { padding-block: .55rem; }
+    @media (max-width: 700px) {
+      .container { width: min(100% - 1.5rem, 1080px); }
+      .section { padding-block: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Md Sahidullah</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="reading.html" aria-current="page">Reading</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container narrow">
+        <p class="eyebrow">Personal reading list</p>
+        <h1>Books I’m Reading</h1>
+        <p class="intro">A short list of books and foundational learning resources I am currently exploring.</p>
+        <ol class="book-list">
+          <li>
+            <span class="book-title"><em>Deep Learning</em></span><br>
+            <span class="book-author">Ian Goodfellow, Yoshua Bengio, and Aaron Courville</span>
+          </li>
+          <li>
+            <span class="book-title"><em>An Introduction to Variational Autoencoders</em></span><br>
+            <span class="book-author">Diederik P. Kingma and Max Welling</span>
+          </li>
+        </ol>
+        <a class="back-link" href="index.html">← Back to the academic website</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Md Sahidullah</span>
+    </div>
+  </footer>
+</body>
+</html>
